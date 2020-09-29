@@ -70,13 +70,13 @@ def get_vms():
     results = vms_schema.dump(all_vm)
     return jsonify(results)
 
-# Get singel vm
+# Get single vm
 @app.route('/vm/<id>', methods=["GET"])
 def get_vm(id):
     get_vm = Vm.query.get(id)
     return vm_schema.jsonify(get_vm)
 
-# Delete singel vm
+# Delete single vm
 @app.route('/vm/<id>', methods=["DELETE"])
 def delete_vm(id):
     delete_vm = Vm.query.get(id)
