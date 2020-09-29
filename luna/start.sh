@@ -23,7 +23,7 @@ init_db() {
         echo "db exists..."
     else
         echo "db not exists... will init DB..."
-        python3 - <<END
+        python - <<END
 from app import db
 db.create_all()
 END
