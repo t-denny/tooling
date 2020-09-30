@@ -93,4 +93,4 @@ def get_specific_vm(instance_type):
 
 # Run server
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False, port=5001, host='0.0.0.0')
