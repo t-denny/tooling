@@ -31,8 +31,8 @@ go run main.go
 ```sh
 20 |    var (
 21 |        partition = map[string]string{
-22 |    	    "/home/jenkins": "clean_hj.sh",
-23 |   	        "/tmp": "clean_tmp.sh",
+22 |            "/home/jenkins": "clean_hj.sh",
+23 |            "/tmp": "clean_tmp.sh",
 24 |        }
 25 |    )
 ```
