@@ -70,6 +70,6 @@ func CleanUp() {
 func main() {
 	fmt.Println("Running smart cleaner!")
 	s := gocron.NewScheduler()
-    s.Every(5).Minute().Do(CleanUp)
-    <- s.Start()
+	s.Every(5).Minute().Do(CleanUp)
+	<- s.Start()
 }
